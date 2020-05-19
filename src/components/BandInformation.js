@@ -1,13 +1,13 @@
 import React from 'react';
 
-const BandInformation = (props) => {
+const BandInformation = ({ information }) => {
 
-    const { title, description } =  props;
+    const { title, description } =  information;
 
     return (
         <>
-            <h2 className="title">{title}</h2>
-            <p>{description}</p>
+            <h2 className="title">{ title }</h2>
+            <p>{ description }</p>
         </>
     )
 }

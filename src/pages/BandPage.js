@@ -2,7 +2,7 @@ import React from 'react';
 import BandInformation from '../components/BandInformation';
 import BandMusicians from '../components/BandMusicians';
 
-import bandInformation from '../utils/mocks/band-description';
+import bandMocks from '../utils/mocks/band-mocks';
 
 const BandPage = () => {
 
@@ -10,10 +10,11 @@ const BandPage = () => {
         <section className="section">
             <div className="container has-text-centered">
                 <BandInformation 
-                    title = {bandInformation.title}
-                    description = {bandInformation.description}
+                    information = {bandMocks.information}
                 />
-                <BandMusicians />
+                <BandMusicians 
+                    musicians = {bandMocks.musicians}
+                />
             </div>
         </section>
     )
